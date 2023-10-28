@@ -5,6 +5,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      function nam() {
+          var nane=document.getElementById("getname").value;
+          var surnam =document.getElementById("getsurname").value;
+          var email =document.getElementById("getemail").value;
+          var contact =document.getElementById("getcontact").value;
+         
+      if(!nane =="" && !surnam=="" && !email=="" && !contact==""){
+         
+          
+
+         alert("details succefull captured");
+     }
+     else if (nane=="") {
+         alert("first Name missing!");
+         
+     } 
+
+     else if (surnam==""){
+         alert("SurName missing!");
+
+     }
+
+     else if (email=="") {
+         alert("Email missing!");
+     }
+     
+     else if (contact==""){
+         alert("Contact missing!");
+
+     }
+
+
+          
+      }
+  </script>
+
+
+<script>
+  function myfunction2(){
+      document.getElementById("getname").value = "";
+      document.getElementById("getsurname").value = "";
+      document.getElementById("getemail").value = "";
+      document.getElementById("getcontact").value = "";
+    
+  }
+</script>
+
+
   </head>
   <body>
     <header id="header">
@@ -16,10 +66,10 @@
             id="header-img"
         /></a>
         <nav id="nav-bar">
-          <a href="/index.html" class="nav-link">Home</a>
-          <a href="/services.html" class="nav-link">Services</a>
-          <a href="/gallery.html" class="nav-link">Gallery</a>
-          <a href="/contact.html" class="nav-link">Contact</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </nav>
       </div>
     </header>
@@ -35,6 +85,68 @@
         </div>
       </section>
     </main>
+    <table  height="500px" width="300px" align="center" >
+      <tr>
+          <td>
+          
+          </td>
+          <td>
+              
+          </td>
+          
+      </tr>
+      <tr>
+          <td>
+              First Name
+          </td>
+          <td>
+              <input type="text" required placeholder="Enter your Name" id="getname">
+          </td>
+
+      </tr>
+
+
+
+      <tr>
+          <td>
+              Surname
+          </td>
+          <td>
+              <input type="text"  required placeholder="Enter your Surname" id="getsurname">
+          </td>
+          
+      </tr>
+
+      <tr>
+          <td>
+              E-mail
+          </td>
+          <td>
+              <input type="text"  required placeholder="Enter your E-mail" id="getemail">
+          </td>
+          
+      </tr>
+
+      <tr>
+          <td>
+              Contact No
+          </td>
+          <td>
+              <input type="text" required placeholder="Enter your Contact NO" id="getcontact">
+          </td>
+          
+      </tr>
+      
+      <tr>
+          <td>
+              <input type="submit" onclick="nam()">
+          </td>
+          <td>
+              <input type="reset" onclick="myfunction2()">
+          </td>
+          
+      </tr>
+  </table>
     <footer>
       Created by
       <a href="https://soundclick.co.za/">Sound Click labs</a>
